@@ -1,5 +1,8 @@
 import CreateOrder from "./CreateOrder";
 import { useLoadScript} from '@react-google-maps/api';
+import TopBar from "./TopBar";
+import { Layout } from "antd";
+import Main from "./Main";
 
 const libraries = ['places','drawing','geometry']
 function App() {
@@ -13,7 +16,13 @@ function App() {
     }
 
     return (
-        <CreateOrder/>
+
+        <Layout>
+            <TopBar/>
+            <Main/>
+        </Layout>
+
+        // <CreateOrder/>
     );
 }
 

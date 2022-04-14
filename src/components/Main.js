@@ -1,13 +1,18 @@
 import React from 'react';
 import {Switch, Route, Redirect } from "react-router-dom";
+import Home from './Home';
 
 
 function Main(props) {
 
-
-
+    
     return (
-        <div></div>
+        
+        <Switch>
+
+            <Route path='/' component={Home}/>
+        
+        </Switch>
     );
 }
 
