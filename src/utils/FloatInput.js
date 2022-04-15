@@ -19,8 +19,14 @@ const FloatInput = (props) => {
       className="float-label"
       onBlur={() => setFocus(false)}
       onFocus={() => setFocus(true)}
-    >
-      <Input onChange={props.onChange} type={type} defaultValue={value} style={{height: '56px'}}/>
+    >   
+    {
+        type==='password'?
+        (<Input onChange={props.onChange} type={type} defaultValue={value} style={{height: '56px'}}/>)
+        :
+        (<Input onChange={props.onChange} type={type} defaultValue={value} style={{height: '56px'}}/>)
+    }
+      {/* <Input onChange={props.onChange} type={type} defaultValue={value} style={{height: '56px'}}/> */}
       <label className={labelClass} style={{height: 'fit-content'}}>
         {isOccupied ? label : placeholder} {requiredMark}
       </label>

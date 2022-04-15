@@ -6,8 +6,12 @@ import cover_3 from "../assets/images/cover-3.png";
 import logo_light from "../assets/images/logo-2.png";
 import FloatInput from "../utils/FloatInput";
 import { CloseOutlined } from "@ant-design/icons";
+import { useHistory } from "react-router-dom";
 
 function Login(props) {
+
+    const history = useHistory()
+
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -15,6 +19,10 @@ function Login(props) {
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
+  const onClickClose = () => {
+    history.push('/')
+  }
 
   return (
     <Row>
@@ -25,8 +33,17 @@ function Login(props) {
         <div className="login-right">
           {/* <CloseOutlined style={{ fontSize: "20px", marginTop: "30px" }} /> */}
 
-          <Tooltip title="close" >
-            <Button shape="circle" size='large' icon={<CloseOutlined />} style={{marginTop: "20px", borderWidth: '0px'}}/>
+          <Tooltip title="close">
+            <Button
+              shape="circle"
+              size="large"
+              icon={<CloseOutlined />}
+              style={{
+                marginTop: "20px",
+                borderWidth: "0px",
+              }}
+              onClick={onClickClose}
+            />
           </Tooltip>
           <div className="login-subright">
             <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -103,7 +120,7 @@ function Login(props) {
               </Form.Item>
 
               <Form.Item>
-                Don't have an account? <a href="">Sign up</a>
+                Don't have an account? <a href="/register">Sign up</a>
               </Form.Item>
             </Form>
           </div>
