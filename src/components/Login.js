@@ -1,9 +1,6 @@
 import React from "react";
 import { Form, Input, Button, Row, Col, Tooltip } from "antd";
-import cover_1 from "../assets/images/cover-1.png";
-import cover_2 from "../assets/images/cover-2.png";
-import cover_3 from "../assets/images/cover-3.png";
-import logo_light from "../assets/images/logo-2.png";
+import logo_light from "../assets/images/logo-light.png";
 import FloatInput from "../utils/FloatInput";
 import { CloseOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
@@ -11,6 +8,7 @@ import { useHistory } from "react-router-dom";
 function Login(props) {
 
     const history = useHistory()
+    const baseUrl = process.env['REACT_APP_S3_ADDRESS']
 
   const onFinish = (values) => {
     console.log("Success:", values);
@@ -24,10 +22,23 @@ function Login(props) {
     history.push('/')
   }
 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  
+  const getRandomImage = () => {
+
+    const number = getRandomInt(18) + 1
+
+    const url = baseUrl + 'cover-' + number + '.png'
+    console.log(url)
+    return url
+  }
+
   return (
     <Row>
       <Col span={13}>
-        <img src={cover_1} className="img-login" />
+        <img src={getRandomImage()} className="img-login" />
       </Col>
       <Col span={10}>
         <div className="login-right">

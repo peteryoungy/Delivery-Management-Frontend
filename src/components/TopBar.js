@@ -4,7 +4,7 @@ import { Menu, Dropdown, message, Tooltip } from "antd";
 import { DownOutlined, UserOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
-import logo_dark from "../assets/images/logo-3.png";
+import logo_dark from "../assets/images/logo-dark.png";
 
 const { Header, Footer, Sider, Content } = Layout;
 
