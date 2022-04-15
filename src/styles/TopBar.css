@@ -1,0 +1,35 @@
+
+#header {
+    font-family:'Montserrat', sans-serif;
+  }
+  
+.topbar {
+    margin-bottom: 20px;
+}
+
+
+.logo-topbar {
+    width: auto;
+    height: 60px;
+
+    margin-top: 10px;
+}
+
+
+.logo-group {
+    display: flex;
+    /* align-items: center; */
+}
+
+.logo-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-left: 8px;
+
+}
+
+.btn-topbar {
+    font-weight: 600;
+}

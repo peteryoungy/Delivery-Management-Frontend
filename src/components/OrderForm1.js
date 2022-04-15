@@ -134,19 +134,20 @@ function OrderForm1(props) {
   // DidMount
   useEffect(() => {
     console.log("Form 1 did mount.");
-    console.log(history);
+    // console.log(history);
 
-    const {
-      location: { state },
-    } = history;
-    console.log(state);
+    // const {
+    //   location: { state },
+    // } = history;
+    // console.log(state);
 
-    if (!state) {
-      history.goBack();
-    } else {
-      const newInfo = assignIn(info, { ship_method: state });
-      setInfo(newInfo);
-    }
+    // if (!state) {
+    //   history.goBack();
+    // } else {
+    //   const newInfo = assignIn(info, { ship_method: state });
+    //   console.log(newInfo)
+    //   setInfo(newInfo);
+    // }
   }, []);
 
   // DidUpdate
