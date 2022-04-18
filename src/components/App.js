@@ -3,8 +3,8 @@ import TopBar from "./TopBar";
 import { Layout } from "antd";
 import Main from "./Main";
 import { Route, Switch } from "react-router-dom";
-import Login from "./main/Login";
-import Register from "./main/Register";
+import Login from "./Login";
+import Register from "./Register";
 
 const libraries = ["places", "drawing", "geometry"];
 function App() {
