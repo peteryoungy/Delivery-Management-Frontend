@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Layout, Button, Row, Col, Space, Image } from "antd";
-import robot from "../assets/images/robot-2.png";
-import drone from "../assets/images/drone.jpg";
+import robot from "../../assets/images/robot-2.png";
+import drone from "../../assets/images/drone.jpg";
 import { useHistory } from "react-router-dom";
 
 const { Header, Footer, Sider, Content } = Layout;

@@ -16,7 +16,7 @@ import usePlacesAutocomplete, {
   getLatLng,
 } from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
-import { POSITIONS } from "../constants";
+import { POSITIONS } from "../../../constants";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 import { assignIn } from "lodash/object";

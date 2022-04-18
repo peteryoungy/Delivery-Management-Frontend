@@ -5,7 +5,7 @@ import {
   DirectionsService,
   DirectionsRenderer,
 } from "@react-google-maps/api";
-import { POSITIONS } from "../constants";
+import { POSITIONS } from "../../../constants";
 
 const containerStyle = {
   width: "500px",

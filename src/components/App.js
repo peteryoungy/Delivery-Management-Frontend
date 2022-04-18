@@ -1,11 +1,10 @@
-import CreateOrder from "./CreateOrder";
 import { useLoadScript } from "@react-google-maps/api";
 import TopBar from "./TopBar";
 import { Layout } from "antd";
 import Main from "./Main";
 import { Route, Switch } from "react-router-dom";
-import Login from "./Login";
-import Register from "./Register";
+import Login from "./main/Login";
+import Register from "./main/Register";
 
 const libraries = ["places", "drawing", "geometry"];
 function App() {

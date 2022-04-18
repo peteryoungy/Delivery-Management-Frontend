@@ -6,7 +6,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import OrderForm2 from "./OrderForm2";
 import OrderForm3 from "./OrderForm3";
 import OrderForm4 from "./OrderForm4";
-import { POSITIONS } from "../constants";
+import { POSITIONS } from "../../../constants";
 import OrderReview from "./OrderReview";
 import { useHistory } from "react-router-dom";
 import { assignIn } from "lodash/object";

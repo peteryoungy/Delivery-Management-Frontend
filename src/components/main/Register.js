@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Input, Button, Row, Col, Tooltip } from "antd";
-import logo_light from "../assets/images/logo-light.png";
-import FloatInput from "../utils/FloatInput";
+import logo_light from "../../assets/images/logo-light.png";
+import FloatInput from "../../utils/FloatInput";
 import { CloseOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 

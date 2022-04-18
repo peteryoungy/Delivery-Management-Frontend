@@ -1,10 +1,8 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import CreateOrder from "./CreateOrder";
-import Home from "./Home";
-import OrderList from "./OrderList";
-import Login from "./Login";
-import Register from "./Register";
+import { Switch, Route } from "react-router-dom";
+import CreateOrder from "./main/create_order/CreateOrder";
+import Home from "./main/Home";
+import OrderList from "./main/OrderList";
 function Main(props) {
   return (
     <Switch>
